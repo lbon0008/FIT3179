@@ -52,9 +52,10 @@
               "url": "https://raw.githubusercontent.com/lbon0008/FIT3179/main/sales.csv"
             },
             "key": "region",
-            "fields": ["EV charging points", "EV sales", "EV sales share", "EV stock", "EV stock share"]
+            "fields": ["EV charging points", "EV sales", "EV sales share", "EV stock", "EV stock share"],
+            
           }
-        },
+        }
       ],
       "mark": {"type": "geoshape", "stroke": "white"},
       "encoding": {
@@ -63,7 +64,7 @@
           "type": "quantitative",
           "scale": {
             "type": "threshold",
-            "domain": [10000, 100000, 500000]
+            "domain": [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000]
           }
         },
         "tooltip": [
