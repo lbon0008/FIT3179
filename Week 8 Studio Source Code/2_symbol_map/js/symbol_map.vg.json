@@ -20,17 +20,20 @@
       "encoding": {
         "longitude": {"field": "longitude", "type": "quantitative"},
         "latitude": {"field": "latitude", "type": "quantitative"},
-        "size": {
+        "color": {
           "field": "mag",
           "type": "quantitative",
           "title": "Magnitude (Richter scale)",
-          "scale": {"domain": [4, 8]}
+          "scale": {"scheme": "reds"}
         },
-        "color": {
+        "size": {
           "field": "depth",
           "type": "quantitative",
-          "title": "Depth in km",
-          "scale": {"scheme": "reds"}
+          "title": "Depth in km"
+        },
+        "shape": {
+          "field": "locationSource",
+          "type": "geojson"
         }
       }
     }
