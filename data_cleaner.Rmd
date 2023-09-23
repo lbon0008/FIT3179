@@ -17,6 +17,8 @@ sales <- data %>%
   pivot_wider(names_from = parameter, values_from = total) %>%
   select(-c("Electricity demand", "Oil displacement Mbd", "Oil displacement Mlge"))
 
+sales$region[sales$region=="USA"]<-"United States of America "
+
 ```
 
 ```{r}
