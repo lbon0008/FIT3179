@@ -1,0 +1,25 @@
+```{r}
+library(tidyverse)
+```
+
+```{r}
+data <- read_csv("IEA-EV-data.csv")
+```
+sales$Country[sales$Country=="USA"]<-"United States of America"
+```{r}
+sales <- data %>%
+  group_by(region, parameter) %>%
+  summarise(total = sum(value)) %>%
+  filter(region != "World") %>%
+  filter(region != "Europe") %>%
+  filter(region != "Other Europe") %>%
+  filter(region != "Rest of the world") %>%
+  pivot_wider(names_from = parameter, values_from = total) %>%
+  select(-c("Electricity demand", "Oil displacement Mbd", "Oil displacement Mlge"))
+
+```
+
+```{r}
+write.csv(sales,file='/Users/lukebonso/Desktop/sales.csv', row.names=FALSE)
+```
+
