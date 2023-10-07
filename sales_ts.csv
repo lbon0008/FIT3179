@@ -1,435 +1,99 @@
-"year","region","value"
-2011,"Australia",49
-2012,"Australia",80
-2012,"Australia",170
-2013,"Australia",190
-2013,"Australia",100
-2014,"Australia",950
-2014,"Australia",370
-2015,"Australia",760
-2015,"Australia",1000
-2016,"Australia",700
-2016,"Australia",670
-2017,"Australia",1200
-2017,"Australia",1100
-2018,"Australia",1800
-2018,"Australia",1800
-2019,"Australia",6300
-2019,"Australia",2900
-2020,"Australia",1700
-2020,"Australia",5200
-2010,"China",1900
-2010,"China",4.90000009536743
-2010,"China",120
-2010,"China",1100
-2010,"China",340
-2011,"China",320
-2011,"China",4800
-2011,"China",330
-2011,"China",14
-2011,"China",330
-2011,"China",2100
-2012,"China",1800
-2012,"China",1000
-2012,"China",51
-2012,"China",520
-2012,"China",9600
-2012,"China",260
-2013,"China",730
-2013,"China",15000
-2013,"China",550
-2013,"China",310
-2013,"China",3500
-2013,"China",1800
-2014,"China",11000
-2014,"China",12000
-2014,"China",130
-2014,"China",720
-2014,"China",49000
-2014,"China",24000
-2015,"China",61000
-2015,"China",150000
-2015,"China",12000
-2015,"China",5800
-2015,"China",26000
-2015,"China",76000
-2016,"China",94000
-2016,"China",19000
-2016,"China",4500
-2016,"China",21000
-2016,"China",5.09999990463257
-2016,"China",260000
-2016,"China",79000
-2017,"China",110000
-2017,"China",470000
-2017,"China",14000
-2017,"China",58000
-2017,"China",4500
-2017,"China",480
-2017,"China",120000
-2018,"China",110000
-2018,"China",2400
-2018,"China",35000
-2018,"China",53000
-2018,"China",3600
-2018,"China",820000
-2018,"China",270000
-2019,"China",230000
-2019,"China",830000
-2019,"China",2400
-2019,"China",23000
-2019,"China",16000
-2019,"China",2600
-2019,"China",98000
-2020,"China",57000
-2020,"China",3600
-2020,"China",4500
-2020,"China",57000
-2020,"China",3600
-2020,"China",4500
-2020,"China",420
-2020,"China",51000
-2020,"China",930000
-2020,"China",230000
-2020,"China",57000
-2020,"China",3600
-2020,"China",4500
-2020,"China",420
-2020,"China",51000
-2020,"China",930000
-2020,"China",230000
-2020,"China",51000
-2020,"China",420
-2020,"China",930000
-2020,"China",230000
-2010,"Denmark",28
-2010,"Denmark",20
-2010,"Denmark",4
-2010,"Denmark",4
-2010,"Denmark",6
-2011,"Denmark",23
-2011,"Denmark",1
-2011,"Denmark",2
-2011,"Denmark",420
-2012,"Denmark",490
-2012,"Denmark",12
-2012,"Denmark",8
-2012,"Denmark",1
-2012,"Denmark",130
-2013,"Denmark",100
-2013,"Denmark",1
-2013,"Denmark",3
-2013,"Denmark",2
-2013,"Denmark",10
-2013,"Denmark",500
-2014,"Denmark",1500
-2014,"Denmark",90
-2014,"Denmark",2
-2014,"Denmark",47
-2015,"Denmark",260
-2015,"Denmark",85
-2015,"Denmark",420
-2015,"Denmark",4200
-2016,"Denmark",1200
-2016,"Denmark",570
-2016,"Denmark",81
-2016,"Denmark",1
-2016,"Denmark",57
-2016,"Denmark",4
-2017,"Denmark",70
-2017,"Denmark",1
-2017,"Denmark",24
-2017,"Denmark",620
-2017,"Denmark",690
-2018,"Denmark",1500
-2018,"Denmark",3100
-2018,"Denmark",31
-2018,"Denmark",3
-2018,"Denmark",190
-2018,"Denmark",2
-2019,"Denmark",83
-2019,"Denmark",230
-2019,"Denmark",2
-2019,"Denmark",17
-2019,"Denmark",34
-2019,"Denmark",3900
-2019,"Denmark",5500
-2020,"Denmark",14000
-2020,"Denmark",18000
-2020,"Denmark",160
-2020,"Denmark",15
-2020,"Denmark",460
-2020,"Denmark",3
-2010,"France",16
-2010,"France",190
-2010,"France",800
-2011,"France",1700
-2011,"France",2600
-2011,"France",96
-2011,"France",21
-2012,"France",25
-2012,"France",600
-2012,"France",5700
-2012,"France",3600
-2013,"France",5100
-2013,"France",8800
-2013,"France",830
-2013,"France",24
-2014,"France",2100
-2014,"France",11000
-2014,"France",40
-2014,"France",4500
-2015,"France",4900
-2015,"France",51
-2015,"France",17000
-2015,"France",5700
-2015,"France",10
-2016,"France",9
-2016,"France",7700
-2016,"France",22000
-2016,"France",1
-2016,"France",74
-2016,"France",5500
-2017,"France",6000
-2017,"France",1
-2017,"France",17
-2017,"France",26000
-2017,"France",12000
-2017,"France",5
-2018,"France",16000
-2018,"France",31000
-2018,"France",91
-2018,"France",5
-2018,"France",8100
-2019,"France",8000
-2019,"France",16
-2019,"France",270
-2019,"France",43000
-2019,"France",19000
-2019,"France",22
-2020,"France",150
-2020,"France",75000
-2020,"France",110000
-2020,"France",150
-2020,"France",6
-2020,"France",8800
-2010,"Germany",140
-2010,"Germany",170
-2011,"Germany",280
-2011,"Germany",240
-2011,"Germany",1400
-2012,"Germany",2200
-2012,"Germany",1200
-2012,"Germany",950
-2013,"Germany",2
-2013,"Germany",600
-2013,"Germany",1600
-2013,"Germany",5300
-2014,"Germany",8300
-2014,"Germany",4400
-2014,"Germany",720
-2015,"Germany",2
-2015,"Germany",1000
-2015,"Germany",11000
-2015,"Germany",12000
-2016,"Germany",11000
-2016,"Germany",13000
-2016,"Germany",2400
-2016,"Germany",110
-2016,"Germany",11
-2016,"Germany",120
-2017,"Germany",29
-2017,"Germany",4500
-2017,"Germany",29000
-2017,"Germany",25000
-2018,"Germany",36000
-2018,"Germany",31000
-2018,"Germany",5300
-2018,"Germany",95
-2018,"Germany",3
-2019,"Germany",240
-2019,"Germany",190
-2019,"Germany",5200
-2019,"Germany",45000
-2019,"Germany",63000
-2020,"Germany",190000
-2020,"Germany",2e+05
-2020,"Germany",9000
-2020,"Germany",180
-2020,"Germany",370
-2020,"Germany",300
-2010,"Japan",2400
-2011,"Japan",13000
-2011,"Japan",2
-2011,"Japan",850
-2011,"Japan",15
-2012,"Japan",11000
-2012,"Japan",2500
-2012,"Japan",4
-2012,"Japan",13000
-2013,"Japan",15000
-2013,"Japan",7
-2013,"Japan",2100
-2013,"Japan",14000
-2014,"Japan",16000
-2014,"Japan",1000
-2014,"Japan",6
-2014,"Japan",16000
-2015,"Japan",10000
-2015,"Japan",2
-2015,"Japan",830
-2015,"Japan",14000
-2016,"Japan",9400
-2016,"Japan",320
-2016,"Japan",8
-2016,"Japan",15000
-2017,"Japan",18000
-2017,"Japan",10
-2017,"Japan",320
-2017,"Japan",36000
-2018,"Japan",23000
-2018,"Japan",280
-2018,"Japan",10
-2018,"Japan",27000
-2019,"Japan",21000
-2019,"Japan",8
-2019,"Japan",520
-2019,"Japan",18000
-2020,"Japan",15000
-2020,"Japan",1200
-2020,"Japan",10
-2020,"Japan",15000
-2010,"Korea",61
-2010,"Korea",5
-2011,"Korea",4
-2011,"Korea",270
-2012,"Korea",510
-2012,"Korea",2
-2013,"Korea",6
-2013,"Korea",600
-2014,"Korea",1300
-2014,"Korea",3
-2015,"Korea",2
-2015,"Korea",18
-2015,"Korea",250
-2015,"Korea",3100
-2016,"Korea",4700
-2016,"Korea",330
-2016,"Korea",14
-2016,"Korea",30
-2017,"Korea",670
-2017,"Korea",14000
-2018,"Korea",55000
-2018,"Korea",4400
-2018,"Korea",300
-2018,"Korea",50
-2019,"Korea",110
-2019,"Korea",2700
-2019,"Korea",33000
-2019,"Korea",1500
-2020,"Korea",15000
-2020,"Korea",31000
-2020,"Korea",8700
-2020,"Korea",700
-2010,"Sweden",4
-2011,"Sweden",180
-2011,"Sweden",9
-2012,"Sweden",280
-2012,"Sweden",270
-2012,"Sweden",660
-2013,"Sweden",1100
-2013,"Sweden",430
-2013,"Sweden",210
-2014,"Sweden",280
-2014,"Sweden",1200
-2014,"Sweden",3400
-2015,"Sweden",9
-2015,"Sweden",5600
-2015,"Sweden",7
-2015,"Sweden",3000
-2015,"Sweden",320
-2015,"Sweden",5
-2016,"Sweden",17
-2016,"Sweden",45
-2016,"Sweden",3000
-2016,"Sweden",10000
-2016,"Sweden",33
-2017,"Sweden",12
-2017,"Sweden",16000
-2017,"Sweden",4400
-2017,"Sweden",200
-2018,"Sweden",2500
-2018,"Sweden",7100
-2018,"Sweden",9
-2018,"Sweden",54
-2018,"Sweden",22000
-2019,"Sweden",25000
-2019,"Sweden",150
-2019,"Sweden",16000
-2019,"Sweden",1400
-2020,"Sweden",18
-2020,"Sweden",1900
-2020,"Sweden",28000
-2020,"Sweden",160
-2020,"Sweden",66000
-2010,"United Kingdom",9
-2010,"United Kingdom",240
-2010,"United Kingdom",6
-2010,"United Kingdom",260
-2010,"United Kingdom",21
-2011,"United Kingdom",7
-2011,"United Kingdom",1200
-2011,"United Kingdom",12
-2011,"United Kingdom",270
-2011,"United Kingdom",5
-2012,"United Kingdom",8
-2012,"United Kingdom",440
-2012,"United Kingdom",17
-2012,"United Kingdom",1700
-2012,"United Kingdom",990
-2013,"United Kingdom",1100
-2013,"United Kingdom",2700
-2013,"United Kingdom",23
-2013,"United Kingdom",320
-2014,"United Kingdom",6
-2014,"United Kingdom",810
-2014,"United Kingdom",47
-2014,"United Kingdom",6800
-2014,"United Kingdom",7900
-2014,"United Kingdom",7
-2015,"United Kingdom",99
-2015,"United Kingdom",19000
-2015,"United Kingdom",10000
-2015,"United Kingdom",25
-2015,"United Kingdom",940
-2015,"United Kingdom",3
-2016,"United Kingdom",140
-2016,"United Kingdom",9
-2016,"United Kingdom",1100
-2016,"United Kingdom",59
-2016,"United Kingdom",11000
-2016,"United Kingdom",27000
-2016,"United Kingdom",78
-2017,"United Kingdom",41
-2017,"United Kingdom",34000
-2017,"United Kingdom",14000
-2017,"United Kingdom",1200
-2017,"United Kingdom",18
-2017,"United Kingdom",87
-2018,"United Kingdom",98
-2018,"United Kingdom",65
-2018,"United Kingdom",1300
-2018,"United Kingdom",16000
-2018,"United Kingdom",35000
-2019,"United Kingdom",200
-2019,"United Kingdom",37000
-2019,"United Kingdom",38000
-2019,"United Kingdom",3200
-2019,"United Kingdom",10
-2019,"United Kingdom",140
-2020,"United Kingdom",180
-2020,"United Kingdom",4
-2020,"United Kingdom",5400
-2020,"United Kingdom",110000
-2020,"United Kingdom",67000
-2020,"United Kingdom",580
+"region","year","value"
+"Australia",2011,3.89182029811063
+"Australia",2012,5.52146091786225
+"Australia",2013,5.66988092298052
+"Australia",2014,7.18538701558042
+"Australia",2015,7.4730690880322
+"Australia",2016,7.22256601882217
+"Australia",2017,7.74066440191724
+"Australia",2018,8.1886891244442
+"Australia",2019,9.12695876303713
+"Australia",2020,8.83927669058535
+"China",2010,8.15043905120621
+"China",2011,8.97385825622279
+"China",2012,9.49031784004241
+"China",2013,9.99378519051691
+"China",2014,11.4809186688351
+"China",2015,12.7092692421317
+"China",2016,13.076330119474
+"China",2017,13.5631698889928
+"China",2018,14.073248754043
+"China",2019,13.9994973940773
+"China",2020,15.1582604720508
+"Denmark",2010,4.12713438504509
+"Denmark",2011,6.10031895202006
+"Denmark",2012,6.46302945692067
+"Denmark",2013,6.42324696353352
+"Denmark",2014,7.40184157874383
+"Denmark",2015,8.51016857647927
+"Denmark",2016,7.55642796944025
+"Denmark",2017,7.24779258176785
+"Denmark",2018,8.48177324618498
+"Denmark",2019,9.1866622446216
+"Denmark",2020,10.3932325326909
+"France",2010,6.91373735065968
+"France",2011,8.39321601159653
+"France",2012,9.20281210555539
+"France",2013,9.59926951144425
+"France",2014,9.77792432956078
+"France",2015,10.2277787578552
+"France",2016,10.4711848823787
+"France",2017,10.6924675035988
+"France",2018,10.9186457658714
+"France",2019,11.1606408693328
+"France",2020,12.1761596805804
+"Germany",2010,5.73657229747919
+"Germany",2011,7.56008046502183
+"Germany",2012,8.37793112408273
+"Germany",2013,8.92292493064183
+"Germany",2014,9.50450141052567
+"Germany",2015,10.0858924391914
+"Germany",2016,10.1902066614873
+"Germany",2017,10.9772776368839
+"Germany",2018,11.1899339536829
+"Germany",2019,11.6407028349121
+"Germany",2020,12.89884475576
+"Japan",2010,7.78322401633604
+"Japan",2011,9.53726719575386
+"Japan",2012,10.1850509439797
+"Japan",2013,10.3451881532264
+"Japan",2014,10.4044446421035
+"Japan",2015,10.1198884229829
+"Japan",2016,10.115691483812
+"Japan",2017,10.9028318395456
+"Japan",2018,10.825561529166
+"Japan",2019,10.5847645605256
+"Japan",2020,10.3484938352648
+"Korea",2010,4.18965474202643
+"Korea",2011,5.61312810638807
+"Korea",2012,6.23832462503951
+"Korea",2013,6.40687998606931
+"Korea",2014,7.17242457712485
+"Korea",2015,8.12266802334641
+"Korea",2016,8.53188474015923
+"Korea",2017,9.59355987113703
+"Korea",2018,10.9979244697938
+"Korea",2019,10.5270166662152
+"Korea",2020,10.9223348727354
+"Sweden",2010,1.38629436111989
+"Sweden",2011,5.24174701505964
+"Sweden",2012,7.09837563859079
+"Sweden",2013,7.46164039220858
+"Sweden",2014,8.49290049884719
+"Sweden",2015,9.09840271873532
+"Sweden",2016,9.47998575694181
+"Sweden",2017,9.93362870944812
+"Sweden",2018,10.3629040857368
+"Sweden",2019,10.6584351340015
+"Sweden",2020,11.4729156405505
+"United Kingdom",2010,6.2841341610708
+"United Kingdom",2011,7.30921236569276
+"United Kingdom",2012,8.05674377497531
+"United Kingdom",2013,8.3291754420774
+"United Kingdom",2014,9.65310126482804
+"United Kingdom",2015,10.3111835037957
+"United Kingdom",2016,10.5811657021921
+"United Kingdom",2017,10.8066119878785
+"United Kingdom",2018,10.8678634382135
+"United Kingdom",2019,11.2714906436838
+"United Kingdom",2020,12.118137205362
