@@ -5,6 +5,9 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
 </head>
+<title>Electric Vehicles Around the World</title>
+<div><t1>Electric Vehicles Around the World</t1></div>
+
 <body>
   <div id="vis"/>
   <script>
@@ -81,5 +84,49 @@
 };
     vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
   </script>
+<div id = "vis2"/>
+<script>
+  const spec2 = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stock prices of 5 Tech Companies over Time.",
+  "title" : "EV Sales from 2010 to 2020",
+      "data": {
+        "url": "https://raw.githubusercontent.com/lbon0008/FIT3179/main/sales_ts.csv"
+      },
+  "selection": {
+"continent_highlight": {
+"type": "multi",
+"fields": ["region"],
+"bind": "legend"
+}
+},
+  "mark": {
+    "type": "line",
+    "point": true
+  },
+  "encoding": {
+    "x": {"timeUnit": "year", "field": "year"},
+    "y": {"field": "value", "type": "quantitative"},
+    "color": {"field": "region", "type": "nominal"},
+      "opacity": {
+"condition": {"selection": "continent_highlight", "value": 1},
+"value": 0
+},
+"layer": [{"mark": {
+"type": "text",
+"fontSize": 11.5,
+"fontStyle": "italic"
+},"encoding": {
+"text": {"field": "region", "type": "nominal"},
+"color": {"value": "black"}}}, {}],
+"tooltip": [
+          {"field": "region"},
+          {"field": "year", "timeUnit": "year"},
+          {"field": "value"}
+        ]
+  }
+};
+  vegaEmbed("#vis2", spec2, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+</script>
 </body>
 </html>
