@@ -1,6 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "A simple pie chart with embedded data.",
+    "width": 200,
+    "height": 230,
     "data": {
       "url": "https://raw.githubusercontent.com/lbon0008/FIT3179/main/stock_ts.csv"
     },

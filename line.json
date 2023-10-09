@@ -2,6 +2,8 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "Stock prices of 5 Tech Companies over Time.",
     "title" : "EV Sales from 2010 to 2020",
+    "width": 300,
+    "height": 200,
         "data": {
           "url": "https://raw.githubusercontent.com/lbon0008/FIT3179/main/sales_ts.csv"
         },
