@@ -1,0 +1,40 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Stock prices of 5 Tech Companies over Time.",
+    "title" : "EV Sales from 2010 to 2020",
+        "data": {
+          "url": "https://raw.githubusercontent.com/lbon0008/FIT3179/main/sales_ts.csv"
+        },
+    "selection": {
+  "continent_highlight": {
+  "type": "multi",
+  "fields": ["region"],
+  "bind": "legend"
+  }
+  },
+    "mark": {
+      "type": "line",
+      "point": true
+    },
+    "encoding": {
+      "x": {"timeUnit": "year", "field": "year"},
+      "y": {"field": "value", "type": "quantitative"},
+      "color": {"field": "region", "type": "nominal"},
+        "opacity": {
+  "condition": {"selection": "continent_highlight", "value": 1},
+  "value": 0
+  },
+    "layer": [{"mark": {
+    "type": "text",
+    "fontSize": 11.5,
+    "fontStyle": "italic"
+    },"encoding": {
+    "text": {"field": "region", "type": "nominal"},
+    "color": {"value": "black"}}}, {}],
+    "tooltip": [
+            {"field": "region"},
+            {"field": "year", "timeUnit": "year"},
+            {"field": "value"}
+          ]
+  }
+  }

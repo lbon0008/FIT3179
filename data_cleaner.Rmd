@@ -20,8 +20,45 @@ sales <- data %>%
 sales$region[sales$region=="USA"]<-"United States of America "
 
 ```
+```{r}
+sales_ts <- data %>%
+  filter(region != "World") %>%
+  filter(region != "Europe") %>%
+  filter(region != "Other Europe") %>%
+  filter(region != "Rest of the world") %>%
+  filter(parameter == "EV sales") %>%
+  select(year, region, value) %>%
+  filter(year <= 2020) %>%
+  filter(region %in% c("Australia", " USA", "China", "Denmark", "United Kingdom", "Germany",
+                       "Korea", "France", "Japan", "Sweden")) %>%
+  group_by(region, year) %>%
+  summarise(value = log(sum(value)))
+
+sales$region[sales_ts$region=="USA"]<-"United States of America "
+```
 
 ```{r}
-write.csv(sales,file='/Users/lukebonso/Desktop/sales.csv', row.names=FALSE)
+write.csv(sales_ts,file='/Users/lukebonso/Desktop/sales_ts.csv', row.names=FALSE)
+```
+
+```{r}
+stock_ts <- data %>%
+  filter(region != "World") %>%
+  filter(region != "Europe") %>%
+  filter(region != "Other Europe") %>%
+  filter(region != "Rest of the world") %>%
+  filter(parameter == "EV stock") %>%
+  select(year, region, value) %>%
+  filter(year <= 2020) %>%
+  filter(region %in% c("Australia", " USA", "China", "Denmark", "United Kingdom", "Germany",
+                       "Korea", "France", "Japan", "Sweden")) %>%
+  group_by(region, year) %>%
+  summarise(value = sum(value))
+
+sales$region[sales_ts$region=="USA"]<-"United States of America "
+```
+
+```{r}
+write.csv(stock_ts,file='/Users/lukebonso/Desktop/stock_ts.csv', row.names=FALSE)
 ```
 

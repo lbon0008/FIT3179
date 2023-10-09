@@ -1,0 +1,35 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A simple pie chart with embedded data.",
+    "data": {
+      "url": "https://raw.githubusercontent.com/lbon0008/FIT3179/main/stock_ts.csv"
+    },
+    "params": [
+      {
+        "name": "year_select",
+        "value": 2011,
+        "bind": {
+        "input": "range",
+        "min": 2011,
+        "max": 2020,
+        "step": 1,
+        "name": "Year: "
+      }
+      }
+      ],
+    "transform": [
+      {"filter": "datum.year == year_select"}
+      ],
+    
+    "mark": "arc",
+    "encoding": {
+      "theta": {"field": "value", "type": "quantitative"},
+      "color": {"field": "region", "type": "nominal"},
+      "tooltip": [
+            {"field": "region"},
+            {"field": "value"}
+          ]
+      
+    }
+    
+  }
