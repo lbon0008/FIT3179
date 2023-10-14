@@ -32,9 +32,8 @@ sales_ts <- data %>%
   filter(region %in% c("Australia", " USA", "China", "Denmark", "United Kingdom", "Germany",
                        "Korea", "France", "Japan", "Sweden")) %>%
   group_by(region, year) %>%
-  summarise(value = log(sum(value)))
+  summarise(sales = sum(value))
 
-sales$region[sales_ts$region=="USA"]<-"United States of America "
 ```
 
 ```{r}
@@ -60,5 +59,29 @@ sales$region[sales_ts$region=="USA"]<-"United States of America "
 
 ```{r}
 write.csv(stock_ts,file='/Users/lukebonso/Desktop/stock_ts.csv', row.names=FALSE)
+```
+
+```{r}
+charging_points <- data %>%
+  filter(region != "World") %>%
+  filter(region != "Europe") %>%
+  filter(region != "Other Europe") %>%
+  filter(region != "Rest of the world") %>%
+  filter(parameter == "EV charging points") %>%
+  select(year, region, value) %>%
+  filter(year <= 2020) %>%
+  filter(region %in% c("Australia", " USA", "China", "Denmark", "United Kingdom", "Germany",
+                       "Korea", "France", "Japan", "Sweden")) %>%
+  group_by(region, year) %>%
+  summarise(charging_points = sum(value))
+```
+
+```{r}
+ts_sales_point <- charging_points %>%
+  full_join(sales_ts)
+
+ts_sales_point[is.na(ts_sales_point)] <- 0
+
+write.csv(ts_sales_point,file='/Users/lukebonso/Desktop/ts_s_cp.csv', row.names=FALSE)
 ```
 
