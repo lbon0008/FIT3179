@@ -13,6 +13,8 @@
     integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
   <!-- Google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,6 +53,34 @@
     .page{
       background-color: #a69898;
     }
+
+    .vis-container-map{
+      margin-left: 100px;
+    }
+
+    h1{
+      font-family: 'Roboto';
+      font-weight: 900;
+      font-size: 40px;
+    }
+
+    h2{
+      font-family: 'Roboto';
+      font-weight: 900;
+      font-size: 30px;
+    }
+
+    h3{
+      font-family: 'Roboto';
+      font-weight: 900;
+      font-size: 30px;
+    }
+
+    p{
+      font-family: 'Roboto';
+      font-size: 17px;
+      color: #565758;
+    }
   </style>
 
 
@@ -73,17 +103,34 @@
     <div class="pure-g">
       <div class="pure-u-1-3">
         <div class="description description-left">
-          <h2 style = "text-align: center;">Number Of Charing Ports Around The World</h2>
-          <p style = "text-align: center;">The Map displays the number of EV charging ports Per <br>
-            country. As the number of EVs a country has grows,<br>
-            so too should its capacity to charge these vehicles. <br>
+          <h2 style = "text-align: center;">A New Type Of Vehicle?</h2>
+          <p style = "text-align: center; margin-left: 20px;">
+            Electric Vehicles are not a new idea, rather a historic <br>
+            idea which since 2010 has been popularized by the rise <br>
+            of new technologies which has made them more efficient, <br>
+            and viable as a replacement for fossil fuel powered <br>
+            vehicles. This dashboard will explore their rise in <br>
+            popularity from the period of 2010 to 2020. <br>
+            </p>
+          <p style = "text-align: center; margin-left: 20px;">
+            The Map to the left displays the total number of electric <br>
+            vehicles per country as of 2020. It shows which countries <br>
+            are leading the charge in the adoption of new electric <br>
+            vehicles.
           </p>
-          <p style = "text-align: center;">Hover over any of the countries which are filled <br>
-            in with colour to see specific information about said <br>
-            country.</p>
+          <p style = "text-align: center; margin-left: 20px;">
+            All other Visualisations have tooltips which give more <br> 
+            detailed information when the user hovers over certain <br>
+            items. The purpose of the rest of the visulisations is not 
+            only to show data about sales but also about how 
+            change in infrastructure such as the number of charging points
+            has changed over time to keep up with the demands 
+            of all these new EVs on the road.
+          </p>
         </div>
       </div>
       <div class="pure-u-2-3">
+        <h2 style = "text-align: center;">Number of Electric Vehicles per Country for the Year 2020</h2>
         <div id="vis1" class="vis-container-map"></div>
       </div>
     </div>

@@ -58,7 +58,7 @@
         "type": "nominal",
         "scale": {
           "domain": ["BEV", "PHEV"],
-          "range": ["#e7ba52", "#c7c7c7"]
+          "range": ["#1b60cf", "#0f8c16"]
         },
         "title": "PowerTrain Type"
       },

@@ -23,7 +23,9 @@
     "encoding": {
       "x": {"timeUnit": "year", "field": "year", "scale": {"type": "log"}, "axis": {"grid": false}},
       "y": {"field": "sales", "type": "quantitative", "scale": {"type": "log"}, "axis": {"grid": false}},
-      "color": {"field": "region", "type": "nominal"},
+      "color": {"field": "region", "type": "nominal", "scale": {
+        "range": ["#68023f", "#008169", "#ef0096", "#00dcb5", "#00e307", "#9400e6", "#6a0213", "#009ffa", "#7cfffa", "#003c86"]
+      }},
         "opacity": {
   "condition": {"selection": "continent_highlight", "value": 1},
   "value": 0

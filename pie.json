@@ -9,6 +9,12 @@
     "data": {
       "url": "https://raw.githubusercontent.com/lbon0008/FIT3179/main/stock_ts.csv"
     },
+    "selection": {
+      "continent_highlight": {
+      "type": "multi",
+      "fields": ["region"],
+      "bind": "legend"
+      }},
     "params": [
       {
         "name": "year_select",
@@ -29,7 +35,13 @@
     "mark": "arc",
     "encoding": {
       "theta": {"field": "value", "type": "quantitative"},
-      "color": {"field": "region", "type": "nominal"},
+      "color": {"field": "region", "type": "nominal", "scale": {
+        "range": ["#68023f", "#008169", "#ef0096", "#00dcb5", "#00e307", "#9400e6", "#6a0213", "#009ffa", "#7cfffa", "#003c86"]
+      }},
+      "opacity": {
+        "condition": {"selection": "continent_highlight", "value": 1},
+        "value": 0
+        },
       "tooltip": [
             {"field": "region", "title": "Country"},
             {"field": "value", "title": "EV Stock"}

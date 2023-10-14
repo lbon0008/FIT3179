@@ -8,18 +8,28 @@ data <- read_csv("IEA-EV-data.csv")
 sales$Country[sales$Country=="USA"]<-"United States of America"
 ```{r}
 sales <- data %>%
-  group_by(region, parameter) %>%
-  summarise(total = sum(value)) %>%
   filter(region != "World") %>%
   filter(region != "Europe") %>%
   filter(region != "Other Europe") %>%
   filter(region != "Rest of the world") %>%
-  pivot_wider(names_from = parameter, values_from = total) %>%
+  pivot_wider(names_from = parameter, values_from = value) %>%
   select(-c("Electricity demand", "Oil displacement Mbd", "Oil displacement Mlge"))
 
 sales$region[sales$region=="USA"]<-"United States of America "
 
+sales_n <- sales %>%
+  select(-c(category, mode, powertrain, unit)) %>%
+  group_by(year, region) %>%
+  summarise(sales = sum(`EV sales`, na.rm = TRUE),
+            charingPoints = sum(`EV sales`, na.rm = TRUE),
+            stock = sum(`EV stock`, na.rm = TRUE),
+            stockShare = sum(`EV stock share`, na.rm = TRUE),
+            salesShare = sum(`EV sales share`, na.rm = TRUE))
+
+write.csv(sales_n,file='/Users/lukebonso/Desktop/total_ts.csv', row.names=FALSE)
+
 ```
+
 ```{r}
 sales_ts <- data %>%
   filter(region != "World") %>%
@@ -83,5 +93,25 @@ ts_sales_point <- charging_points %>%
 ts_sales_point[is.na(ts_sales_point)] <- 0
 
 write.csv(ts_sales_point,file='/Users/lukebonso/Desktop/ts_s_cp.csv', row.names=FALSE)
+```
+
+```{r}
+types <- data %>%
+  filter(region != "World") %>%
+  filter(region != "Europe") %>%
+  filter(region != "Other Europe") %>%
+  filter(region != "Rest of the world") %>%
+  filter(parameter == "EV stock") %>%
+  filter(mode == "Cars") %>%
+  select(year, region, powertrain, value) %>%
+  filter(year <= 2020) %>%
+  filter(region %in% c("Australia", " USA", "China", "Denmark", "United Kingdom", "Germany",
+                       "Korea", "France", "Japan", "Sweden")) %>%
+  group_by(region, year, powertrain) %>%
+  summarise(value = sum(value))
+```
+
+```{r}
+write.csv(types,file='/Users/lukebonso/Desktop/types.csv', row.names=FALSE)
 ```
 
