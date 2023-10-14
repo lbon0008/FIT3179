@@ -1,0 +1,71 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {
+        "background": "blanchedalmond" 
+      },
+      "width": 400,
+    "height": 400,
+    "data": {"url": "https://raw.githubusercontent.com/lbon0008/FIT3179/main/types.csv"},
+    "params": [
+  {
+  "name": "Continent_selection",
+  "bind": {
+  "input": "select",
+  "options": [
+  "Denmark",
+  "Australia",
+  "France",
+  "China",
+  "Germany",
+  "Japan",
+  "Korea",
+  "Sweden",
+  "United Kingdom"
+  ],
+  "labels":[
+    "Denmark",
+    "Australia",
+    "France",
+    "China",
+    "Germany",
+    "Japan",
+    "Korea",
+    "Sweden",
+    "United Kingdom"
+  ],
+  "name": "Region: "
+  }
+  }
+  ],
+      "transform": [
+        {"filter": "Continent_selection == null ||datum.region == Continent_selection"}
+        ],
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "timeUnit": "year",
+        "field": "year",
+        "type": "ordinal",
+        "title": "Year"
+      },
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Stock"
+      },
+      "color": {
+        "field": "powertrain",
+        "type": "nominal",
+        "scale": {
+          "domain": ["BEV", "PHEV"],
+          "range": ["#e7ba52", "#c7c7c7"]
+        },
+        "title": "PowerTrain Type"
+      },
+      "tooltip": [
+        {"field": "region", "title" : "Country"},
+        {"field": "powertrain", "title" : "Type"},
+        {"field": "value", "title" : "Stock"}
+      ]
+    }
+  }

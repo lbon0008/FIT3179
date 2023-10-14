@@ -1,0 +1,186 @@
+"region","year","powertrain","value"
+"Australia",2011,"BEV",49
+"Australia",2012,"BEV",220
+"Australia",2012,"PHEV",80
+"Australia",2013,"BEV",410
+"Australia",2013,"PHEV",180
+"Australia",2014,"BEV",780
+"Australia",2014,"PHEV",1100
+"Australia",2015,"BEV",1500
+"Australia",2015,"PHEV",2100
+"Australia",2016,"BEV",2200
+"Australia",2016,"PHEV",2800
+"Australia",2017,"BEV",3400
+"Australia",2017,"PHEV",3900
+"Australia",2018,"BEV",5200
+"Australia",2018,"PHEV",5700
+"Australia",2019,"BEV",12000
+"Australia",2019,"PHEV",8600
+"Australia",2020,"BEV",17000
+"Australia",2020,"PHEV",10000
+"China",2010,"BEV",1600
+"China",2010,"PHEV",340
+"China",2011,"BEV",6300
+"China",2011,"PHEV",660
+"China",2012,"BEV",16000
+"China",2012,"PHEV",920
+"China",2013,"BEV",31000
+"China",2013,"PHEV",1600
+"China",2014,"BEV",59000
+"China",2014,"PHEV",26000
+"China",2015,"BEV",210000
+"China",2015,"PHEV",87000
+"China",2016,"BEV",460000
+"China",2016,"PHEV",170000
+"China",2017,"BEV",930000
+"China",2017,"PHEV",280000
+"China",2018,"BEV",1700000
+"China",2018,"PHEV",540000
+"China",2019,"BEV",2600000
+"China",2019,"PHEV",770000
+"China",2020,"BEV",10500000
+"China",2020,"PHEV",3e+06
+"Denmark",2010,"BEV",59
+"Denmark",2010,"PHEV",20
+"Denmark",2011,"BEV",480
+"Denmark",2011,"PHEV",20
+"Denmark",2012,"BEV",1200
+"Denmark",2012,"PHEV",14
+"Denmark",2013,"BEV",1500
+"Denmark",2013,"PHEV",14
+"Denmark",2014,"BEV",2900
+"Denmark",2014,"PHEV",100
+"Denmark",2015,"BEV",7900
+"Denmark",2015,"PHEV",570
+"Denmark",2016,"BEV",8700
+"Denmark",2016,"PHEV",1100
+"Denmark",2017,"BEV",8800
+"Denmark",2017,"PHEV",1800
+"Denmark",2018,"BEV",10000
+"Denmark",2018,"PHEV",5200
+"Denmark",2019,"BEV",16000
+"Denmark",2019,"PHEV",9900
+"Denmark",2020,"BEV",32000
+"Denmark",2020,"PHEV",30000
+"France",2010,"BEV",300
+"France",2011,"BEV",2900
+"France",2011,"PHEV",96
+"France",2012,"BEV",8600
+"France",2012,"PHEV",700
+"France",2013,"BEV",17000
+"France",2013,"PHEV",1500
+"France",2014,"BEV",28000
+"France",2014,"PHEV",3600
+"France",2015,"BEV",45000
+"France",2015,"PHEV",9300
+"France",2016,"BEV",67000
+"France",2016,"PHEV",17000
+"France",2017,"BEV",93000
+"France",2017,"PHEV",26000
+"France",2018,"BEV",120000
+"France",2018,"PHEV",41000
+"France",2019,"BEV",170000
+"France",2019,"PHEV",60000
+"France",2020,"BEV",280000
+"France",2020,"PHEV",130000
+"Germany",2010,"BEV",250
+"Germany",2011,"BEV",1600
+"Germany",2011,"PHEV",240
+"Germany",2012,"BEV",3900
+"Germany",2012,"PHEV",1400
+"Germany",2013,"BEV",9200
+"Germany",2013,"PHEV",3000
+"Germany",2014,"BEV",18000
+"Germany",2014,"PHEV",7400
+"Germany",2015,"BEV",30000
+"Germany",2015,"PHEV",19000
+"Germany",2016,"BEV",41000
+"Germany",2016,"PHEV",32000
+"Germany",2017,"BEV",59000
+"Germany",2017,"PHEV",50000
+"Germany",2018,"BEV",95000
+"Germany",2018,"PHEV",82000
+"Germany",2019,"BEV",140000
+"Germany",2019,"PHEV",1e+05
+"Germany",2020,"BEV",330000
+"Germany",2020,"PHEV",3e+05
+"Japan",2010,"BEV",3500
+"Japan",2011,"BEV",16000
+"Japan",2011,"PHEV",15
+"Japan",2012,"BEV",30000
+"Japan",2012,"PHEV",11000
+"Japan",2013,"BEV",44000
+"Japan",2013,"PHEV",25000
+"Japan",2014,"BEV",70000
+"Japan",2014,"PHEV",41000
+"Japan",2015,"BEV",79000
+"Japan",2015,"PHEV",55000
+"Japan",2016,"BEV",88000
+"Japan",2016,"PHEV",65000
+"Japan",2017,"BEV",1e+05
+"Japan",2017,"PHEV",1e+05
+"Japan",2018,"BEV",110000
+"Japan",2018,"PHEV",120000
+"Japan",2019,"BEV",120000
+"Japan",2019,"PHEV",140000
+"Japan",2020,"BEV",140000
+"Japan",2020,"PHEV",160000
+"Korea",2010,"BEV",61
+"Korea",2011,"BEV",340
+"Korea",2012,"BEV",850
+"Korea",2013,"BEV",1400
+"Korea",2014,"BEV",2700
+"Korea",2015,"BEV",5800
+"Korea",2015,"PHEV",250
+"Korea",2016,"BEV",10000
+"Korea",2016,"PHEV",580
+"Korea",2017,"BEV",24000
+"Korea",2017,"PHEV",1300
+"Korea",2018,"BEV",55000
+"Korea",2018,"PHEV",5600
+"Korea",2019,"BEV",89000
+"Korea",2019,"PHEV",8400
+"Korea",2020,"BEV",120000
+"Korea",2020,"PHEV",17000
+"Sweden",2010,"BEV",4
+"Sweden",2011,"BEV",180
+"Sweden",2012,"BEV",600
+"Sweden",2012,"PHEV",650
+"Sweden",2013,"BEV",1000
+"Sweden",2013,"PHEV",1600
+"Sweden",2014,"BEV",2200
+"Sweden",2014,"PHEV",4900
+"Sweden",2015,"BEV",4800
+"Sweden",2015,"PHEV",9800
+"Sweden",2016,"BEV",7500
+"Sweden",2016,"PHEV",19000
+"Sweden",2017,"BEV",11000
+"Sweden",2017,"PHEV",32000
+"Sweden",2018,"BEV",17000
+"Sweden",2018,"PHEV",49000
+"Sweden",2019,"BEV",30000
+"Sweden",2019,"PHEV",67000
+"Sweden",2020,"BEV",56000
+"Sweden",2020,"PHEV",120000
+"United Kingdom",2010,"BEV",1700
+"United Kingdom",2010,"PHEV",21
+"United Kingdom",2011,"BEV",2900
+"United Kingdom",2011,"PHEV",28
+"United Kingdom",2012,"BEV",4600
+"United Kingdom",2012,"PHEV",1000
+"United Kingdom",2013,"BEV",7200
+"United Kingdom",2013,"PHEV",2100
+"United Kingdom",2014,"BEV",14000
+"United Kingdom",2014,"PHEV",10000
+"United Kingdom",2015,"BEV",21000
+"United Kingdom",2015,"PHEV",28000
+"United Kingdom",2016,"BEV",31000
+"United Kingdom",2016,"PHEV",55000
+"United Kingdom",2017,"BEV",45000
+"United Kingdom",2017,"PHEV",89000
+"United Kingdom",2018,"BEV",61000
+"United Kingdom",2018,"PHEV",120000
+"United Kingdom",2019,"BEV",99000
+"United Kingdom",2019,"PHEV",160000
+"United Kingdom",2020,"BEV",210000
+"United Kingdom",2020,"PHEV",230000

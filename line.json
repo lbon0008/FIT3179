@@ -1,11 +1,13 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {
+        "background": "blanchedalmond" 
+      },
     "description": "Stock prices of 5 Tech Companies over Time.",
-    "title" : "EV Sales from 2010 to 2020",
-    "width": 300,
-    "height": 200,
+    "width": 400,
+    "height": 400,
         "data": {
-          "url": "https://raw.githubusercontent.com/lbon0008/FIT3179/main/sales_ts.csv"
+          "url": "https://raw.githubusercontent.com/lbon0008/FIT3179/main/ts_s_cp.csv"
         },
     "selection": {
   "continent_highlight": {
@@ -19,8 +21,8 @@
       "point": true
     },
     "encoding": {
-      "x": {"timeUnit": "year", "field": "year"},
-      "y": {"field": "value", "type": "quantitative"},
+      "x": {"timeUnit": "year", "field": "year", "scale": {"type": "log"}, "axis": {"grid": false}},
+      "y": {"field": "sales", "type": "quantitative", "scale": {"type": "log"}, "axis": {"grid": false}},
       "color": {"field": "region", "type": "nominal"},
         "opacity": {
   "condition": {"selection": "continent_highlight", "value": 1},
@@ -34,9 +36,9 @@
     "text": {"field": "region", "type": "nominal"},
     "color": {"value": "black"}}}, {}],
     "tooltip": [
-            {"field": "region"},
-            {"field": "year", "timeUnit": "year"},
-            {"field": "value"}
+            {"field": "region", "title": "Country"},
+            {"field": "year", "timeUnit": "year", "title": "Year"},
+            {"field": "sales", "title": "Sales"}
           ]
   }
   }

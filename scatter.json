@@ -1,8 +1,12 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
+    "config": {
+        "background": "blanchedalmond" 
+      },
+      "width": 400,
+    "height": 400,
     "data": {"url": "https://raw.githubusercontent.com/lbon0008/FIT3179/main/ts_s_cp.csv"},
-    "title": "Sales vs Charging Points 2011-2020",
         "selection": {
     "continent_highlight": {
     "type": "multi",
@@ -12,7 +16,7 @@
     "params": [
         {
           "name": "year_select",
-          "value": 2011,
+          "value": 2012,
           "bind": {
           "input": "range",
           "min": 2011,
@@ -27,18 +31,20 @@
         ],
     "mark": "point",
     "encoding": {
-      "x": {"field": "charging_points", "type": "quantitative"},
+      "x": {"field": "charging_points", "type": "quantitative",
+      "axis": {"grid": false}},
       "y": {"field": "sales", "type": "quantitative",
-      "scale": {"type": "log"}},
+      "scale": {"type": "log"},
+      "axis": {"grid": false}},
       "color": {"field": "region", "type": "nominal"},
           "opacity": {
     "condition": {"selection": "continent_highlight", "value": 1},
     "value": 0
     },
     "tooltip": [
-              {"field": "region"},
-              {"field": "charging_points"},
-              {"field": "sales"}
+              {"field": "region", "title" : "Country"},
+              {"field": "charging_points", "title" : "Charging Points"},
+              {"field": "sales", "title" : "Sales"}
             ]
     }
   }

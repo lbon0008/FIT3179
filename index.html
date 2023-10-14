@@ -26,7 +26,7 @@
     margin-bottom: 20px; /* Adjust the bottom margin as needed */
     margin-left: 20px;
     margin-right: 20px;
-    background-color: #a69898;
+    background-color: blanchedalmond;
     }
 
     .pure-u-2-3{
@@ -45,11 +45,11 @@
     }
 
     .vis-container{
-      margin-left: 150px;
+      margin-left: 100px;
     }
 
     .page{
-      background-color: blanchedalmond;
+      background-color: #a69898;
     }
   </style>
 
@@ -92,21 +92,29 @@
     <!-- pure grid group -->
     <div class="pure-g">
       <div class="pure-u-1-2">
+        <h2 style = "text-align: center;">EV Sales from 2010 to 2020</h2>
         <div id="vis4" class="vis-container"></div>
         <div class="description description-left">
-          <h2 style = "text-align: center;">EV Sales And Stock</h2>
-          <p style = "text-align: center;">The next two plots display how the sales have changed <br>
-        overtime as well as how the proportion of EV vehicles each <br>
-        country has changed relative to eachother over the years</p>
+          <p style = "text-align: center;">
+            This depecits how the sales of EVs has changed over <br>
+            time for each differnt country. This plot can be filtered <br>
+            by clicking on the legend to see the line plot <br>
+            for a specific country. It can be seen that the <br>
+            sales of EVs has dramatically increased for all countries <br>
+            within this time period.
+          </p>
         </div>
       </div>
       <div class="pure-u-1-2">
+        <h2 style = "text-align: center;">EV Stock from 2011 to 2020</h2>
         <div id="vis3" class="vis-container"></div>
         <div class="description description-left">
-          <h2 style = "text-align: center;">EV Sales And Stock</h2>
-          <p style = "text-align: center;">The next two plots display how the sales have changed <br>
-        overtime as well as how the proportion of EV vehicles each <br>
-        country has changed relative to eachother over the years</p>
+          <p style = "text-align: center;">
+            This plot shows how the stock of electric vehicles is <br>
+            allocated to each country of the world. This plot is <br>
+            filterable by year so it can be seen how the <br>
+            stock level changes relative to each country.
+          </p>
         </div>
       </div>
 
@@ -115,15 +123,30 @@
 
     <div class="pure-g">
       <div class="pure-u-1-2" >
-        
-      </div>
-      <div class="pure-u-1-2">
+        <h2 style = "text-align: center;">EV Sales vs Charging Points from 2011 to 2020</h2>
         <div id="vis5" class="vis-container"></div>
         <div class="description description-left">
-          <h2 style = "text-align: center;">EV Stock Vs Charging Ports</h2>
-          <p style = "text-align: center;">The next two plots display how the sales have changed <br>
-        overtime as well as how the proportion of EV vehicles each <br>
-        country has changed relative to eachother over the years</p>
+          <p style = "text-align: center;">
+            This plot shows the relationship between the sales of EVs <br>
+            and the number of charging Points avaible for use for <br>
+            each country. This plot is filterable by year so that <br>
+            it can be seen how this relationship changes over time. <br>
+            This plot indicates the change in infrastructure to deal with <br>
+            more EVs on the road.
+          </p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <h2 style = "text-align: center;">BEV vs PHEV from 2010 to 2020</h2>
+        <div id="vis6" class="vis-container"></div>
+        <div class="description description-left">
+          <p style = "text-align: center;">
+            This plot depicts how the stocks of Battery Electric Vehicles <br>
+            compares to the stocks of Plug in Hybrids has changed <br>
+            over time for the various countries. This gives insight into <br>
+            what types of EVs have been most popular for each <br>
+            country in each year.
+          </p>
         </div>
       </div>
 
@@ -138,7 +161,8 @@
     var specVis1 = "./map.json";
     var specVis2 = "./pie.json";
     var specVis3 = "./line.json";
-    var specVis4 = "./scatter.json"
+    var specVis4 = "./scatter.json";
+    var specVis5 =  "./bar.json";
 
     vegaEmbed('#vis1', specVis1, { "actions": false });
 
@@ -154,6 +178,11 @@
     vegaEmbed('#vis5', specVis4, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
+
+    vegaEmbed('#vis6', specVis5, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
   </script>
 </body>
 

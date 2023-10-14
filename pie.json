@@ -1,8 +1,11 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "A simple pie chart with embedded data.",
-    "width": 300,
-    "height": 230,
+    "config": {
+      "background": "blanchedalmond" 
+    },
+    "width": 400,
+    "height": 400,
     "data": {
       "url": "https://raw.githubusercontent.com/lbon0008/FIT3179/main/stock_ts.csv"
     },
@@ -28,8 +31,8 @@
       "theta": {"field": "value", "type": "quantitative"},
       "color": {"field": "region", "type": "nominal"},
       "tooltip": [
-            {"field": "region"},
-            {"field": "value"}
+            {"field": "region", "title": "Country"},
+            {"field": "value", "title": "EV Stock"}
           ]
       
     }
